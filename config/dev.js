@@ -2,7 +2,7 @@ module.exports = {
 	host: 'drive.i-t-t.cn',
 	port: 9533,
 	dav: {
-		path: '/webdav'
+		path: '/webdav/'
 	},
 	oss: {
 		region: 'oss-cn-beijing',

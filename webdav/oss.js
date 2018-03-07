@@ -39,9 +39,9 @@ exports.list = function list(usr, options, callback) {
 	} else if (!_.isObject(options)) {
 		options = {};
 	}
-	options.prefix = path.join(usr, (options.prefix || ''));
+	options.prefix = usr + (options.prefix || '');
 	if (options.marker) {
-		options.marker = path.join(usr, (options.marker || ''));
+		options.marker = usr + (options.marker || '');
 	}
 	debug('List Options:', options);
 	if (_.isFunction(callback)) {
@@ -63,7 +63,7 @@ exports.createFolder = function createFolder(usr, dest, callback) {
 	if (!_.isString(usr)) {
 		throw new Error('usr must be string');
 	}
-	dest = path.join(usr, dest);
+	dest = usr + dest;
 	if (!dest.endsWith('/')) {
 		dest += '/';
 	}

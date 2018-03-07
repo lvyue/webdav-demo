@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@webdav-server/github": "^1.0.1",
     "ali-oss": "^4.12.2",
     "async": "^2.6.0",
     "body-parser": "~1.18.2",

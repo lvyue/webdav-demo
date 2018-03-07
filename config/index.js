@@ -1,10 +1,10 @@
-let config
+let config;
 if (process.env.NODE_ENV === 'production') {
-    config = require('./prod');
+	config = require('./prod');
 } else if (process.env.NODE_ENV === 'test') {
-    config = require('./test');
-}else {
-    config = require('./dev');
+	config = require('./test');
+} else {
+	config = require('./dev');
 }
 
 
