@@ -21,9 +21,8 @@ co(function* () {
 	// rs = yield proxy.copy('demo', 'C/', 'A/C/');
 	// debug('Copy Folder:', rs);
 	var result = yield proxy.list('', {
-		'prefix': 'demo',
+		'prefix': '/',
 		'delimiter': '/',
-		'max-keys': 1
 	});
 	debug('LIST:', result);
 }).catch(function (err) {
